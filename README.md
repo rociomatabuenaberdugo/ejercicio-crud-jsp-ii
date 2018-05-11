@@ -18,7 +18,8 @@
   En éste ejercicio hay tres tablas principales:
 
 
-    * <b>Familia cartas.</b> Ésta tabla guarda las distintas tipos de colecciones a las cuales puede pertenecer las cartas de los usuarios.
+    * <b>Familia cartas.</b> Ésta tabla guarda las distintas tipos de colecciones a las cuales puede pertenecer las cartas de los
+    usuarios.
     * <b>Cartas.</b> Ésta tabla recopila las cartas introducidas por el usuario, es decir, las cartas que tiene el usuario.
 
     * <b>Usuario.</b> Ésta tabla recopila las información básica de los distintos usuarios.
@@ -40,10 +41,12 @@
   En ésta ventana se mostraría las distintas opciones de la página web:
 
   
-    * <b>¡Regístrate!</b> Ésta botón llevará a una ventana de registro en la que se le solicitará datos al usuario a cambio de poder acceder al botón "Menú de usuario".
+    * <b>¡Regístrate!</b> Ésta botón llevará a una ventana de registro en la que se le solicitará datos al usuario a cambio de poder
+    acceder al botón "Menú de usuario".
 
     
-  * <b>Iniciar sesión.</b> Tras rellenar éste formulario, dependiendo de los datos, nos denegará el acceso, nos meterá en el "Menú de usuarios" o en el "Menú de administradores".
+  * <b>Iniciar sesión.</b> Tras rellenar éste formulario, dependiendo de los datos, nos denegará el acceso, nos meterá en el "Menú de
+  usuarios" o en el "Menú de administradores".
 
    <img src=./Imágenes/Index.JPG>
   
@@ -80,18 +83,22 @@
 
 
 
-### Entrar como administrador
+### Menú del administrador
 
 
-  Tras iniciar sesión de forma correcta (éste intermedio se mejorará en un futuro), se accede al menú de administrador.
+  Tras iniciar sesión de forma correcta con la cuenta <b>admin</b>, se accede al menú de administrador.
   
-  <img src=./Imágenes/iniciasesion.JPG>
-  <img src=./Imágenes/menuAdmin.JPG>
+  <img src=./Imágenes/MenuAdmin.JPG>
+  <img src=./Imágenes/CRUDCar.JPG>
   <img src=./Imágenes/CRUDUsu.JPG>
 
 
-# Próximos avances
+### Menú de los usuarios
 
-  En un futuro se añadirán mejoras, entre ellos el cambio de estilos de la página web.
-  También se añadirán más opciones a "Entrar como usuario" y a la opción de "Entrar como administrador", además de implementarse una
-  nueva opción en el index llamada "Novedades", en la que se podrá mostrar todas las novedades de la página web "Mundo Cartas"
+  Tras iniciar sesión de forma correcta en cualquier cuenta que sea un usuario (no <b>admin</b>), se accede al menú de los usuarios.
+  
+  <img src=./Imágenes/MenuUsu.JPG>
+  <img src=./Imágenes/ColecCar.JPG>
+  
+# Próximos avances
+  En las próximas actualizaciones se implementará un cambio de aspecto, más funciones (nuevos apartados), mejoras en apartados, etc.
