@@ -1,88 +1,104 @@
 # CRUD con JSP y BBDD ("Mundo cartas")
 
  
-  Ejercicio que se basar· en la creaciÛn de una aplicaciÛn tipo CRUD (alta, listado, modificaciÛn y borrado) sobre la informaciÛn almacenada en una base de datos MySQL.
+  Ejercicio que se basar√° en la creaci√≥n de una aplicaci√≥n tipo CRUD (alta, listado, modificaci√≥n y borrado) sobre la informaci√≥n almacenada en una base de datos MySQL.
 
 
 
-# Tem·tica de la Practica
+# Tem√°tica de la Practica
 
  
-  Para este ejercicio, la tem·tica sera la gestiÛn de usuarios y las cartas coleccionables que tengan Èstos.
+  Para este ejercicio, la tem√°tica sera la gesti√≥n de usuarios y las cartas coleccionables que tengan √©stos.
 
 
 
-# DiseÒo de la Base de Datos
+# Dise√±o de la Base de Datos
 
 
-  En Èste ejercicio hay tres tablas principales:
+  En √©ste ejercicio hay tres tablas principales:
 
 
+<<<<<<< HEAD
     * <b>Familia cartas.</b> …sta tabla guarda las distintas tipos de colecciones a las cuales puede pertenecer las cartas de los
     usuarios.
     * <b>Cartas.</b> …sta tabla recopila las cartas introducidas por el usuario, es decir, las cartas que tiene el usuario.
+=======
+    * <b>Familia cartas.</b> √âsta tabla guarda las distintas tipos de colecciones a las cuales puede pertenecer las cartas de los
+    usuarios.
+    * <b>Cartas.</b> √âsta tabla recopila las cartas introducidas por el usuario, es decir, las cartas que tiene el usuario.
+>>>>>>> 2e7447064021607e4dd1c1eb4dfe97d2489f8c91
 
-    * <b>Usuario.</b> …sta tabla recopila las informaciÛn b·sica de los distintos usuarios.
-    * DespuÈs, una cuarta tabla aparece (<b>cartasusuario</b>) debido a que la relaciÛn de Cartas a Usuario es una de "muchos a muchos".
-
-
-  <img src=./Im·genes/Relaciones.JPG>
-
-
-
-# DiseÒo de las p·ginas JSP
+    * <b>Usuario.</b> √âsta tabla recopila las informaci√≥n b√°sica de los distintos usuarios.
+    * Despu√©s, una cuarta tabla aparece (<b>cartasusuario</b>) debido a que la relaci√≥n de Cartas a Usuario es una de "muchos a muchos".
 
 
-  Este ejercicio presenta <b>seis</b> p·ginas principales:
-
-### Men˙ inicial
+  <img src=./Im√°genes/Relaciones.JPG>
 
 
-  En Èsta ventana se mostrarÌa las distintas opciones de la p·gina web:
+
+# Dise√±o de las p√°ginas JSP
+
+
+  Este ejercicio presenta <b>seis</b> p√°ginas principales:
+
+### Men√∫ inicial
+
+
+  En √©sta ventana se mostrar√≠a las distintas opciones de la p√°gina web:
 
   
+<<<<<<< HEAD
     * <b>°RegÌstrate!</b> …sta botÛn llevar· a una ventana de registro en la que se le solicitar· datos al usuario a cambio de poder
     acceder al botÛn "Men˙ de usuario".
 
     
   * <b>Iniciar sesiÛn.</b> Tras rellenar Èste formulario, dependiendo de los datos, nos denegar· el acceso, nos meter· en el "Men˙ de
   usuarios" o en el "Men˙ de administradores".
+=======
+    * <b>¬°Reg√≠strate!</b> √âsta bot√≥n llevar√° a una ventana de registro en la que se le solicitar√° datos al usuario a cambio de poder
+    acceder al bot√≥n "Men√∫ de usuario".
 
-   <img src=./Im·genes/Index.JPG>
+    
+  * <b>Iniciar sesi√≥n.</b> Tras rellenar √©ste formulario, dependiendo de los datos, nos denegar√° el acceso, nos meter√° en el "Men√∫ de
+  usuarios" o en el "Men√∫ de administradores".
+>>>>>>> 2e7447064021607e4dd1c1eb4dfe97d2489f8c91
+
+   <img src=./Im√°genes/Index.JPG>
   
 
 
 
 
-### °RegÌstrate!
+### ¬°Reg√≠strate!
 
 
-  …sta p·gina se basa en un formulario, el cual una vez rellenado sus campos, introduce al usuario en la base de datos.
+  √âsta p√°gina se basa en un formulario, el cual una vez rellenado sus campos, introduce al usuario en la base de datos.
 
   
-  <img src=./Im·genes/Registro.JPG>
+  <img src=./Im√°genes/Registro.JPG>
   
-    <img src=./Im·genes/Registro1.JPG>
+    <img src=./Im√°genes/Registro1.JPG>
 
 
-    <img src=./Im·genes/Registro2.JPG>
-
-
-
-### Iniciar sesiÛn
-
-
-  Al intentar iniciar sesiÛn, tendremos tres posibilidades:
-
-
-  <img src=./Im·genes/Login0.JPG>
-
-  <img src=./Im·genes/Login1.JPG>
-
-  <img src=./Im·genes/Login2.JPG>
+    <img src=./Im√°genes/Registro2.JPG>
 
 
 
+### Iniciar sesi√≥n
+
+
+  Al intentar iniciar sesi√≥n, tendremos tres posibilidades:
+
+
+  <img src=./Im√°genes/Login0.JPG>
+
+  <img src=./Im√°genes/Login1.JPG>
+
+  <img src=./Im√°genes/Login2.JPG>
+
+
+
+<<<<<<< HEAD
 ### Men˙ del administrador
 
 
@@ -102,3 +118,24 @@
   
 # PrÛximos avances
   En las prÛximas actualizaciones se implementar· un cambio de aspecto, m·s funciones (nuevos apartados), mejoras en apartados, etc.
+=======
+### Men√∫ del administrador
+
+
+  Tras iniciar sesi√≥n de forma correcta con la cuenta <b>admin</b>, se accede al men√∫ de administrador.
+  
+  <img src=./Im√°genes/MenuAdmin.JPG>
+  <img src=./Im√°genes/CRUDCar.JPG>
+  <img src=./Im√°genes/CRUDUsu.JPG>
+
+
+### Men√∫ de los usuarios
+
+  Tras iniciar sesi√≥n de forma correcta en cualquier cuenta que sea un usuario (no <b>admin</b>), se accede al men√∫ de los usuarios.
+  
+  <img src=./Im√°genes/MenuUsu.JPG>
+  <img src=./Im√°genes/ColecCar.JPG>
+  
+# Pr√≥ximos avances
+  En las pr√≥ximas actualizaciones se implementar√° un cambio de aspecto, m√°s funciones (nuevos apartados), mejoras en apartados, etc.
+>>>>>>> 2e7447064021607e4dd1c1eb4dfe97d2489f8c91
