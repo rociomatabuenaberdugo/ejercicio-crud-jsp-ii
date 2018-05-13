@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-05-2018 a las 06:32:54
+-- Tiempo de generación: 13-05-2018 a las 18:43:44
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -94,7 +94,7 @@ CREATE TABLE `usuario` (
   `NomUsu` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `CorEleUsu` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `ConUsu` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `FecNacUsu` date NOT NULL,
+  `FecAlta` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `tipUsu` int(3) NOT NULL COMMENT 'Presenta 3 distintos: usuarios normales, administradores y superadministrador'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -102,14 +102,16 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`CodUsu`, `NomUsu`, `CorEleUsu`, `ConUsu`, `FecNacUsu`, `tipUsu`) VALUES
-(1, 'Sonio', 'ibaaponerSoniaperomequivoqué@puesnada.com', 'sdhdfiwebf51', '1900-01-01', 1),
-(2, 'Pepito', 'Pepito@pep.p', 'pepitoELmolon', '1980-03-05', 1),
-(3, 'Rocío', 'holaadios2411@gmail.com', 'teleoperadora', '1999-11-24', 3),
-(100, 'admin', 'admin@admin.com', 'admin', '2007-05-13', 3),
-(4751, 'Rrsmfk', 'prueba@prueba.prueba', 'prueba', '1999-01-30', 1),
-(11111, 'Rocio', 'pruebanum@gmail.com', 'hola', '1999-11-13', 2),
-(47851, '485', '74512@sdf.askdm', '98465132', '1800-11-11', 1);
+INSERT INTO `usuario` (`CodUsu`, `NomUsu`, `CorEleUsu`, `ConUsu`, `FecAlta`, `tipUsu`) VALUES
+(1, 'Sonio', 'ibaaponerSoniaperomequivoqué@puesnada.com', 'sdhdfiwebf51', '0000-00-00 00:00:00', 1),
+(2, 'Pepito', 'Pepito@pep.p', 'pepitoELmolon', '1980-03-04 23:00:00', 1),
+(3, 'Rocío', 'holaadios2411@gmail.com', 'teleoperadora', '1999-11-23 23:00:00', 3),
+(100, 'admin', 'admin@admin.com', 'admin', '2007-05-12 22:00:00', 3),
+(4751, 'Rrsmfk', 'prueba@prueba.prueba', 'prueba', '1999-01-29 23:00:00', 1),
+(11111, 'Rocio', 'pruebanum@gmail.com', 'hola', '1999-11-12 23:00:00', 2),
+(47851, '485', '74512@sdf.askdm', '98465132', '0000-00-00 00:00:00', 1),
+(47852, 'pruebaregistro', 'prueba@registro.uno', 'prueba', '2018-05-13 15:27:12', 1),
+(47853, 'pruebaregistrodos', 'prueba@registro.dos', 'pruebaregistro', '2018-05-13 15:28:09', 1);
 
 --
 -- Índices para tablas volcadas
@@ -141,7 +143,8 @@ ALTER TABLE `familiacartas`
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`CodUsu`);
+  ADD PRIMARY KEY (`CodUsu`),
+  ADD UNIQUE KEY `Index_CorEleUsu` (`CorEleUsu`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -163,7 +166,7 @@ ALTER TABLE `familiacartas`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `CodUsu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47852;
+  MODIFY `CodUsu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47854;
 
 --
 -- Restricciones para tablas volcadas

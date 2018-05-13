@@ -29,16 +29,16 @@
       <div><img id="img-Mun-Car" src="Img/MunCar3.png"></div>
 
       <!-- Formulario de inicio de sesión o para registrarse -->
-      <form action="validarUsu.jsp" method="get" accept-charset="utf-8" id="for-in-se" class="form-signin">
+      <form action="grabarNuevoUsuario.jsp" method="get" accept-charset="utf-8" id="for-in-se" class="form-signin">
 
-        <h4 class="h4 font-weight-normal" id="inises">Inicia sesión</h4>
+        <h4 class="h4 font-weight-normal" id="inises">Formulario de registro</h4>
         <input type="text" id="usuario" name="usuario" class="form-control form-group" placeholder="Nombre de usuario" required autofocus value="">
+        <input type="email" name="correo" value="" class="form-control form-group" placeholder="Correo electrónico" required>
         <input type="password" name="contraseña" value="" class="form-control form-group" placeholder="Contraseña" required>
-
         <input id="boton" class="btn btn-md btn-basic btn-block" type="submit" value="Acceder">
-        <a href="registroUsu1.jsp" id="registrar">¿No tienes cuenta? Regístrate.</a>
-
-        <!-- Copyright "Mundo Cartas" -->
+      </form>
+      <form action="index.jsp" method="get" accept-charset="utf-8" id="for-in-se-cancel" class="form-signin">
+        <input id="for-in-se-cancel" class="btn btn-md btn-danger btn-block" type="submit" value="Volver al inicio">
       </form>
       <p id="copyright" class="mt-5 mb-3 text-muted">© MundoCartas 2018 - Rocío Matabuena Berdugo</p>
     </main>

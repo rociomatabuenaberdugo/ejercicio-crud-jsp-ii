@@ -27,16 +27,21 @@
 
       <!-- Icono de la página "Mundo Cartas" -->
       <div><img id="img-Mun-Car" src="Img/MunCar3.png"></div>
-      <h4 class="h4 font-weight-normal" id="inisesmenu">Bienvenido</h4>
+      <h4 class="h4 font-weight-normal" id="inisesmenu">Bienvenido administrador</h4>
       <!-- Formulario para modificar los datos del usuario -->
-      <form action="modificarDatosUsu.jsp" method="get" accept-charset="utf-8"  class="form-signin">
+      <form action="modificarDatosAdmin.jsp" method="get" accept-charset="utf-8"  class="form-signin">
         <input id="boton" class="btn btn-md btn-basic btn-block" type="submit" value="Modifica tus datos">
       </form>
       
+      <!-- Formulario para modificar los datos del usuario -->
+      <form action="CRUDUsu.jsp" method="get" accept-charset="utf-8" class="for-in-se-cancel">
+        <input id="boton-modif" class="btn btn-md btn-basic btn-block" type="submit" value="Administrar usuarios">
+      </form>   
+      
       <!-- Formulario para llevar a las últimas novedades -->
-      <form action="Novedades.jsp" method="get" accept-charset="utf-8" class="for-in-se-cancel">
-        <input id="boton-modif" class="btn btn-md btn-basic btn-block" type="submit" value="Mira tu colección">
-      </form>
+      <form action="CRUDColec.jsp" method="get" accept-charset="utf-8" class="for-in-se-cancel">
+        <input id="boton-modif" class="btn btn-md btn-basic btn-block" type="submit" value="Administrar colecciones">
+      </form>    
       
       <!-- Formulario para cerrar sesión -->
       <form action="index.jsp" method="get" accept-charset="utf-8" id="for-in-se-cancel" class="form-signin">
